@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "divisions",
+  "info": {
+    "singularName": "division",
+    "pluralName": "divisions",
+    "displayName": "Division"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "careers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::career.career",
+      "mappedBy": "division"
+    }
+  }
+}

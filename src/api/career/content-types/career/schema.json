@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "careers",
+  "info": {
+    "singularName": "career",
+    "pluralName": "careers",
+    "displayName": "Career",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "filled": {
+      "type": "boolean"
+    },
+    "contract": {
+      "type": "enumeration",
+      "enum": [
+        "Fulltime",
+        "Contract",
+        "Intern"
+      ]
+    },
+    "office": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::office.office",
+      "inversedBy": "careers"
+    },
+    "division": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::division.division",
+      "inversedBy": "careers"
+    },
+    "qualification": {
+      "type": "richtext"
+    }
+  }
+}

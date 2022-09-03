@@ -96,11 +96,11 @@
       },
       "type": "enumeration",
       "enum": [
-        "alat",
-        "iol",
-        "silikon_oil",
-        "meja_kursi",
-        "instrumen"
+        "a_alat",
+        "b_iol",
+        "c_silikon_oil",
+        "d_meja_kursi",
+        "e_instrumen"
       ],
       "required": true
     },

@@ -119,6 +119,18 @@
         }
       },
       "type": "richtext"
+    },
+    "product_gallery": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     }
   }
 }

@@ -99,8 +99,8 @@
         "a_alat",
         "b_iol",
         "c_silikon_oil",
-        "d_meja_kursi",
-        "e_instrumen"
+        "d_instrumen",
+        "e_meja_kursi"
       ],
       "required": true
     },
@@ -121,11 +121,12 @@
       "type": "richtext"
     },
     "product_gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": true,
       "pluginOptions": {
         "i18n": {
           "localized": false
